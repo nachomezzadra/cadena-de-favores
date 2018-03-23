@@ -109,4 +109,27 @@ $(function() {
         });
     }
 
+    var easingFn = function (t, b, c, d) {
+        var ts = (t /= d) * t;
+        var tc = ts * t;
+        return b + c * (tc * ts + -5 * ts * ts + 10 * tc + -10 * ts + 5 * t);
+    }
+    var options = {
+        useEasing: true,
+        easingFn: easingFn,
+        useGrouping: true,
+        separator: '.',
+        decimal: ',',
+    };
+
+
+    var cantidadTotalDeFavores = 437121;
+
+    var counter = new CountUp('counterElement', 0, cantidadTotalDeFavores, 0, 3, options);
+    if (!counter.error) {
+        counter.start();
+    } else {
+        console.error(counter.error);
+    }
+
 }); /* End Fn */

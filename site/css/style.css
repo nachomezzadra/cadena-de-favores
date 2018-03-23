@@ -50,6 +50,13 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
+.h1-favores {
+    font-size: 200px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: -1rem;
+}
+
 h2 {
     font-size: 45px;
     font-weight: 300;
@@ -169,6 +176,13 @@ p.lead {
         font-size: 40px;
     }
 
+    .h1-favores {
+        font-size: 140px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        margin-bottom: -1rem;
+    }
+
     h2 {
         font-size: 30px;
     }
@@ -253,25 +267,76 @@ header {
     margin: 0 auto;
 }
 
-.img-holder {
+.tagline-cantidad-favores {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffb8f6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.favores-holder {
     height: 0;
-    padding-bottom: 33%;
+    padding-bottom: 23%;
     overflow: hidden;
 }
 
 @media (max-width: 1200px) {
-    .img-holder {
+    .favores-holder {
         padding-bottom: 50%;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .tagline {
         font-size: 17px;
     }
 
-    .img-holder {
-        padding-bottom: 100%;
+    .h1-favores {
+        font-size: 160px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        margin-bottom: 0rem;
+    }
+
+    .favores-holder {
+        padding-bottom: 63%;
+    }
+}
+
+/*iphone x, iphone 6/7/8, galaxy s5*/
+@media (max-width: 375px) {
+    .tagline {
+        font-size: 17px;
+    }
+
+    .h1-favores {
+        font-size: 80px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        margin-bottom: 0rem;
+    }
+
+    .favores-holder {
+        padding-bottom: 63%;
+    }
+}
+
+@media (max-width: 420px) {
+    .tagline {
+        font-size: 17px;
+    }
+
+    .h1-favores {
+        font-size: 95px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        margin-bottom: 0rem;
+    }
+
+    .favores-holder {
+        padding-bottom: 63%;
     }
 }
 
